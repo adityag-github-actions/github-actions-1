@@ -8,6 +8,8 @@ jobs:
         steps:
             - name: echo
               run: echo "SHIVA"
+            - name: checkout repo
+              uses: actions/checkout@v4
             - name: os
               run: |
                 cat /etc/os-release
